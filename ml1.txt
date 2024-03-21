@@ -1,0 +1,69 @@
+import pandas as pd
+from matplotlib import pyplot as plt
+import seaborn as sns
+
+read function:- heart=pd.read_csv{'heart.csv'}
+
+press shift+enter
+
+heart.head()
+
+sms.displot{heart}
+
+heart.shape
+
+heart['sex'].value_counts()
+
+heart['sex'].value_counts().keys()
+
+heart['sex'].value_counts().values()
+
+plt.bar(list(heart['sex'].value_counts().keys)),hert['sex'].value_counts().values)plt.show()
+
+plt.bar(list(['Male , Female'].value_counts().keys)),hert['sex'].value_counts().values plt.show()
+
+
+Chest Pain
+
+heart['cp'].value_counts()
+plt.path(list(('Level=0','Level-2','Level-1', 'Level-3')),list(heart['cp'].value_counts(),colors['Green','Orange','Blue','Red']))
+
+Colestrol
+sns.displot(heart['chol'])
+plt.show()
+
+#navebayes(Multinominal NB) algorithm
+
+x=heart[['age']]
+y=heart[['output']]
+
+from sklearn.model_selection import train_test_split
+
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3)
+
+ from sklearn.naive_bayes import MultinomialNB
+
+mnb=MultinomialNB()
+
+mnb.fit(x_train,y_train)
+
+y_pred=mnb.predict(x_test)
+
+from sklearn.metrics import confusion_matrix
+
+confusion_matrix(y_test,y_pred)
+
+
+(47)/(44+47)
+
+from sklearn.model_selection import train.test.split y_train, x_train, y_test, x_text
+
+gnb=GaussianNB()
+
+gnb.fit(x_train,y_train)
+
+y+pred=gnb.predict(r.test)
+
+from sklearn.metrics import confusion_matrox confusion_matrix(y_test,y_pred)
+
+(27+29)/(27+15+20+29
